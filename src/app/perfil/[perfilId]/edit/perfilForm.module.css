@@ -1,0 +1,303 @@
+.section {
+  display: flex;
+  width: 100%;
+  margin-top: 61px;
+  min-height: 75vh;
+}
+
+.editTitle {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.045em;
+}
+
+.imageContainer {
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 16px;
+  width: 20%;
+}
+
+.formContainer {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.image {
+  width: 254px;
+  height: 254px;
+  background-color: var(--black-light);
+  border-radius: 20px;
+}
+
+.editUserDataForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 15px;
+}
+
+.editUserDataForm p {
+  text-align: center;
+}
+
+.buttonSubmit,
+.buttonCancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #131713;
+  border-radius: 58px;
+  width: 254px;
+  height: 66px;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttonSubmit:disabled,
+.buttonCancel:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.buttonCancel:disabled:hover,
+.buttonSubmit:disabled:hover {
+  background-color: var(--black);
+
+  border: none;
+}
+
+.buttonSubmit:hover,
+.buttonCancel:hover,
+.changePwdButton:hover {
+  background-color: var(--green);
+
+  border: none;
+  color: var(--white);
+}
+
+.inputsContainer {
+  display: flex;
+  column-gap: 40px;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 534px;
+  margin-bottom: 24px;
+}
+
+.inputContainer input {
+  width: 100%;
+  height: 55px;
+  padding: 16px;
+}
+
+.inputContainer input:disabled {
+  background-color: var(--black-light);
+}
+
+.inputContainer p {
+  color: var(--red);
+  height: 24px;
+}
+
+.inputContainer label,
+.selectContainer label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #131713;
+}
+.selectContainer select {
+  width: 100%;
+  height: 55px;
+  padding: 16px;
+}
+
+.buttonsContainer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 534px;
+}
+
+.IoCaretBack {
+  color: var(--white);
+  background-color: var(--green);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 32px;
+  margin-left: 32px;
+}
+
+.changePwdButton {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background: #131713;
+  border-radius: 58px;
+  width: 253px;
+  height: 66px;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.changePwdButton:hover {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.containers {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  gap: 16px;
+}
+
+.backContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 32px;
+  gap: 1rem;
+  cursor: pointer;
+}
+.backContainer h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black-light);
+  align-items: center;
+  gap: 1rem;
+}
+.back {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  background-color: var(--orange);
+  border-radius: 20px;
+}
+
+@media (max-width: 1535px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .editUserDataForm {
+    width: 100%;
+    align-items: center;
+  }
+
+  .imageContainer {
+    margin-left: 0px;
+    margin-bottom: 32px;
+  }
+
+  .formContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .editUserDataForm {
+    width: 100%;
+    align-items: center;
+  }
+
+  .inputsContainer {
+    width: 90%;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .selectContainer {
+    width: 100%;
+  }
+
+  .IoCaretBack {
+    margin-left: 0px;
+  }
+
+  .changePwdButton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .inputsContainer label {
+    height: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .buttonsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttonCancel {
+    display: none;
+  }
+
+  .editUserDataForm > div {
+    flex-direction: column;
+  }
+}
+
+.noArrows::-webkit-inner-spin-button,
+.noArrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.noArrows {
+  cursor: text;
+}

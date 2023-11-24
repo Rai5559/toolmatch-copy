@@ -1,0 +1,182 @@
+.teamContainer {
+  background-color: #dcf1d9;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.infoTeam {
+  font-size: 3rem;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.teamSubTitle {
+  padding-top: 2rem;
+  color: #131713;
+  font-weight: 700;
+}
+
+.mainMembers {
+  display: flex;
+  padding-left: 5rem;
+}
+
+.teamContact {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem 5rem;
+  border-radius: 50%;
+  margin: 1rem;
+  text-align: center;
+}
+
+.teamContactInfo {
+  background-color: #bdcfba;
+  justify-content: space-evenly;
+  margin: 1rem;
+  padding: 3rem;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+
+.teamContactInfo:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+  z-index: 5;
+}
+
+.teamImage {
+  background-color: #dcf1d9;
+  display: inline-table;
+  opacity: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  object-fit: cover;
+}
+
+.teamName {
+  margin-top: 20px;
+  color: #131713;
+  font-size: 1.8rem;
+}
+
+.countryicon {
+  font-size: 3rem;
+  color: #131713;
+  margin: 0 auto;
+}
+
+.teamLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.teamLinks a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  position: relative;
+}
+
+.teamLinks a:hover {
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  transform: scale(1.1);
+}
+
+.brand {
+  color: orange;
+  font-weight: 900;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+  font-size: 4rem;
+}
+
+@media (max-width: 700px) {
+  .teamContainer {
+    margin: 0;
+    max-width: fit-content;
+    left: 0;
+  }
+  .teamSubTitle {
+    padding-top: 2rem;
+    color: #131713;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .teamContact {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+  .teamContactInfo {
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .icons {
+    font-size: 2rem;
+    margin-top: 10px;
+  }
+
+  .teamLinks a:hover {
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 0px;
+    transform: none;
+  }
+  .teamContactInfo:hover {
+    transform: none;
+    box-shadow: none;
+    z-index: 0;
+  }
+  .countryicon {
+    font-size: 2rem;
+  }
+  .infoTeam {
+    font-size: 2rem;
+  }
+  .teamImage {
+    margin-top: 0;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  .teamName {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  .teamLinks {
+    margin: 0;
+  }
+  .teamLinks a {
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,26 @@
+.rangeContainer {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+}
+
+.rangeContainer span {
+  position: absolute;
+  top: -50px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: 700;
+  background-color: var(--orange);
+}
+
+.rangeContainer input {
+  width: 100%;
+  background: var(--red);
+}
+
+@media (max-width: 500px) {
+  .rangeContainer {
+    max-width: 300px;
+  }
+}

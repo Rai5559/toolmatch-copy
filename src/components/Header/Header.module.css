@@ -1,0 +1,201 @@
+.header {
+  display: flex;
+  padding: 20px 50px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black);
+  color: var(--white);
+  height: 100px;
+}
+
+.menubutton {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+}
+
+.logo svg path {
+  fill: var(--orange);
+}
+
+.logo svg:hover path {
+  fill: var(--white);
+}
+
+.logo h2 {
+  font-weight: 800;
+  width: max-content;
+  letter-spacing: 0.35rem;
+}
+
+.nav, .navbar {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.nav > ul {
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.route {
+  padding: 3px 5px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 5px;
+}
+
+
+.nav ul li {
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar ul li:hover {
+  border-bottom: 1px solid var(--orange);
+  cursor: pointer;
+}
+
+.navLi {
+  padding: 5px 10px;
+}
+
+.home {
+  display: flex;
+}
+.perfil {
+  width: 25px;
+  position: relative;
+  cursor: pointer;
+}
+
+.perfil ul li a {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3px 5px;
+}
+
+.openSubmenu {
+  display: none;
+  position: absolute;
+  width: 202px;
+  padding: 15px;
+  flex-direction: column;
+  border-right: 3px solid var(--orange);
+  box-sizing: border-box;
+  gap: 2px;
+  right: 0;
+  top: 25px;
+  z-index: 1;
+  background-color: var(--black);
+}
+
+.userImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ---------- CARRITO DE COMPRA --------- */
+.cart {
+  position: relative;
+  display: inline-block;
+}
+.cartCount {
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  background-color: var(--orange);
+  color: var(--black);
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+.cartText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.cart:hover .cartText {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ----- Media Queries ----- */
+
+@media (max-width: 1050px) {
+  .logo h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 920px) {
+  .menubutton {
+    display: inline;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    position: relative;
+    padding: 15px 30px;
+  }
+
+  .nav {
+    background-color: var(--black);
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 3rem;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 50vh;
+    z-index: 1;
+    margin-top: 100px;
+    padding-bottom: 30px;
+  }
+
+  .nav li {
+    padding: 0;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 920px) {
+  .perfil:hover .openSubmenu {
+    display: flex;
+  }
+  
+  .perfil:hover .userImg {
+    border: 2px solid var(--orange);
+  }
+}

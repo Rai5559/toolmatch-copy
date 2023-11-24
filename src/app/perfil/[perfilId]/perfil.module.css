@@ -1,0 +1,319 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding-bottom: 8px;
+}
+
+.sectionTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: xx-large;
+  line-height: 44px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  letter-spacing: 0.045em;
+  color: #2e2e2e;
+  -webkit-text-fill-color: #232323;
+  -webkit-text-stroke: 1px #000;
+  text-align: center;
+}
+
+.dataTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: x-large;
+  line-height: 44px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  letter-spacing: 0.045em;
+  color: #2e2e2e;
+  -webkit-text-fill-color: #232323;
+  text-align: center;
+}
+
+.sectionsContainer {
+  display: flex;
+  justify-content: center;
+  column-gap: 32px;
+  margin: 16px 40px;
+}
+
+.sectionsContainer section,
+.reviewContainer,
+.reviewContainerAutor {
+  padding: 16px;
+  background-color: var(--white-dark);
+  border-radius: 10px;
+}
+
+.sectionsContainer > section:nth-child(1) {
+  background-color: var(--white-dark);
+  width: 70%;
+}
+.sectionsContainer > section:nth-child(2) {
+  width: 30%;
+  background-color: var(--white-dark);
+}
+
+.sectionTitleH3Seller {
+  margin-left: 0 !important;
+}
+
+.reviewContainer,
+.reviewContainerAutor {
+  margin: 16px 40px 50px 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--white-dark);
+  height: 400px;
+  overflow: auto;
+}
+
+.reviewContainerAutor {
+  width: 67%;
+  height: 600px;
+}
+
+.reviewContainer::-webkit-scrollbar,
+.scrollInPosts::-webkit-scrollbar,
+.reviewContainerAutor::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reviewContainer::-webkit-scrollbar-track,
+.scrollInPosts::-webkit-scrollbar-track,
+.reviewContainerAutor::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.reviewContainer::-webkit-scrollbar-thumb,
+.scrollInPosts::-webkit-scrollbar-thumb,
+.reviewContainerAutor::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
+.reviewContainer::-webkit-scrollbar-thumb:hover,
+.scrollInPosts::-webkit-scrollbar-thumb:hover,
+.reviewContainerAutor::-webkit-scrollbar-thumb:hover {
+  background-color: darkorange;
+}
+
+.scrollInPosts {
+  overflow: auto;
+  height: 480px;
+}
+
+.imageContainer {
+  width: 254px;
+  height: 254px;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  overflow: hidden;
+}
+
+.userContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userDataContainer {
+  display: flex;
+}
+.userDataContainer div {
+  margin-left: 32px;
+}
+
+.userDataContainer h2 {
+  margin-bottom: 32px;
+}
+
+.buttonContainer {
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.editButton {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  background: #131713;
+  border-radius: 58px;
+  width: 302px;
+  height: 66px;
+  color: var(--white);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease-in-out;
+}
+
+.editButton:hover {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+.profileCard {
+  width: 70%;
+  background-color: var(--white-dark);
+  border-radius: 6px;
+  box-shadow: inset 0px -10px 10px -10px rgba(0, 0, 0, 0.5);
+}
+
+.profileCard .profileCard__Date {
+  display: flex;
+  padding: 13px 18px;
+}
+
+.profileCard .profileCard__Date:not(:last-child) {
+  border-bottom: 1px solid var(--black);
+}
+
+.profileCard__Date p:first-child {
+  flex-basis: 50%;
+  flex-grow: 0;
+}
+
+.profileCard__Date p:last-child {
+  flex-grow: 1;
+}
+
+.titlesSections > h3:nth-child(1) {
+  width: 70%;
+  margin-left: 40px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+
+  letter-spacing: 0.045em;
+}
+
+.titlesSections > h3:nth-child(2) {
+  width: 30%;
+
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.titlesSections {
+  display: flex;
+}
+
+.titleReviewContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.titleReviewContainer > h3:nth-child(1) {
+  width: 50%;
+  margin-left: 40px;
+}
+.titleReviewContainer > h3:nth-child(2) {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.titleReviewContainer h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.045em;
+}
+
+@media (max-width: 1279px) {
+  .sectionsContainer {
+    flex-direction: column;
+  }
+
+  .sectionsContainer > section:nth-child(1),
+  .sectionsContainer > section:nth-child(2) {
+    width: 100%;
+    margin-top: 32px;
+  }
+
+  .sectionsContainer > section:nth-child(2) {
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 993px) {
+  .reviewContainer,
+  .reviewContainerAutor {
+    margin: 16px 0 50px 0px;
+    width: 90%;
+  }
+
+  .profileCard {
+    width: 95%;
+  }
+}
+
+@media (min-width: 768px) {
+  .itemsStart {
+    align-items: start;
+  }
+}
+
+@media (max-width: 420px) {
+  .profileCard .profileCard__Date {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+    column-gap: 16px;
+  }
+
+  .sectionsContainer {
+    margin: 16px 18px;
+  }
+
+  .customModal {
+    width: 70%;
+    height: calc(100% - 60rem);
+    margin-top: 30rem;
+    padding: 1rem;
+  }
+}
+
+.customModal {
+  width: 30%;
+  max-height: calc(100% - 46rem);
+  margin: auto;
+  background-color: rgb(211, 231, 211);
+  margin-top: 20rem;
+  padding: 10px;
+  padding-top: 10px;
+}
+
+.modalheader {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.modaltitle {
+  color: black;
+  font-weight: bold;
+  font-size: 1.875rem;
+}
+.modalbuttonClose:hover {
+  cursor: pointer;
+}
